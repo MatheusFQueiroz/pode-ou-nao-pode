@@ -71,13 +71,39 @@ var MUNDOS=[
   {ic:'glasses',cor:CORES.coral,p:'Ficar com a tela colada no rosto.',ok:0,x:'Perto demais cansa os olhos. Afaste um pouco a tela.',f:['glasses',CORES.coral,'Perto demais']},
   {ic:'headset',cor:CORES.coral,p:'Ouvir música no fone com o som no máximo.',ok:0,x:'Som muito alto machuca o ouvido, e o ouvido não tem conserto.',f:['headset',CORES.coral,'Fone']},
   {ic:'alarm-clock',cor:CORES.sol,p:'Combinar com um adulto quanto tempo vai usar a tela.',ok:1,x:'Com hora combinada sobra tempo para brincar, correr e dormir bem.',f:['alarm-clock',CORES.sol,'Hora combinada']}]},
+ {nome:'Guardar e carregar',ic:['backpack',CORES.terra],cor:'#F3E4D2',txt:'Onde os aparelhos dormem e como ganham energia.',fases:[
+  {ic:'backpack',cor:CORES.terra,p:'Guardar o tablet na capinha antes de colocar na mochila.',ok:1,x:'A capinha protege a tela dos lápis, cadernos e esbarrões.',f:['backpack',CORES.terra,'Mochila']},
+  {ic:'book-one',cor:CORES.coral,p:'Colocar livros pesados em cima do notebook.',ok:0,x:'O peso pode rachar a tela e amassar o teclado.',f:['book-one',CORES.coral,'Livro pesado']},
+  {ic:'battery-charge',cor:CORES.verde,p:'Usar o carregador certo, do próprio aparelho.',ok:1,x:'Cada aparelho tem o carregador feito para ele. O certo cuida da bateria.',f:['battery-charge',CORES.verde,'Carregador certo']},
+  {ic:'single-bed',cor:CORES.coral,p:'Dormir com o celular carregando embaixo do travesseiro.',ok:0,x:'Embaixo do travesseiro ele esquenta e não consegue respirar.',f:['single-bed',CORES.coral,'Travesseiro']},
+  {ic:'ipad',cor:CORES.ceu,p:'Deixar o aparelho numa mesa firme, longe da beirada.',ok:1,x:'Longe da beirada ele não cai. Na beirada, um esbarrão derruba.',f:['ipad',CORES.ceu,'Mesa firme']},
+  {ic:'dog',cor:CORES.coral,p:'Deixar o fone de ouvido no chão perto do cachorro.',ok:0,x:'O cachorro pode morder o fio e engolir pedaços. Guarde na gaveta.',f:['dog',CORES.coral,'Cachorro']}]},
+ {nome:'Na internet',ic:['wifi',CORES.ceu],cor:'#D8ECF7',txt:'Cuidar de você também faz parte de cuidar dos aparelhos.',fases:[
+  {ic:'lock',cor:CORES.verde,p:'Guardar a senha só com a família, sem contar para os colegas.',ok:1,x:'A senha é como a chave de casa: só quem mora com você pode ter.',f:['lock',CORES.verde,'Senha']},
+  {ic:'people-unknown',cor:CORES.coral,p:'Conversar com um desconhecido que mandou mensagem no jogo.',ok:0,x:'Quem você não conhece de verdade não deve falar com você. Mostre para um adulto.',f:['people-unknown',CORES.coral,'Desconhecido']},
+  {ic:'camera',cor:CORES.coral,p:'Mandar foto sua para alguém que você não conhece.',ok:0,x:'Foto é coisa sua e da sua família. Nunca mande para desconhecidos.',f:['camera',CORES.coral,'Foto']},
+  {ic:'people',cor:CORES.verde,p:'Chamar um adulto quando aparecer algo estranho na tela.',ok:1,x:'Se apareceu algo esquisito, assustador ou pedindo dados, o adulto resolve.',f:['people',CORES.verde,'Chamar adulto']},
+  {ic:'message',cor:CORES.coral,p:'Clicar em qualquer aviso que diz "você ganhou um prêmio!".',ok:0,x:'Esses avisos costumam ser mentira e podem trazer vírus. Feche e avise um adulto.',f:['message',CORES.coral,'Prêmio falso']},
+  {ic:'game',cor:CORES.verde,p:'Jogar só os jogos que os pais ou a professora liberaram.',ok:1,x:'Os adultos escolhem jogos bons para a sua idade. Assim você brinca tranquilo.',f:['game',CORES.verde,'Jogo liberado']}]},
+ {nome:'Dividindo com os outros',ic:['friends-circle',CORES.rosa],cor:'#FCE1E9',txt:'Aparelhos dos amigos, da família e da escola.',fases:[
+  {ic:'iphone',cor:CORES.coral,p:'Pegar o celular de alguém sem pedir.',ok:0,x:'O celular é de outra pessoa. Sempre peça antes de mexer.',f:['iphone',CORES.coral,'Celular dos outros']},
+  {ic:'people-speak',cor:CORES.verde,p:'Perguntar "posso usar?" antes de pegar o tablet do amigo.',ok:1,x:'Pedir é respeitar. E quase sempre a resposta é sim!',f:['people-speak',CORES.verde,'Posso usar?']},
+  {ic:'time',cor:CORES.verde,p:'Combinar um tempo para cada um jogar e trocar na hora certa.',ok:1,x:'Com o tempo combinado, ninguém fica esperando demais.',f:['time',CORES.verde,'Troca combinada']},
+  {ic:'hand-drag',cor:CORES.coral,p:'Puxar o tablet da mão do colega porque a vez é sua.',ok:0,x:'Puxar pode derrubar o aparelho e machucar o colega. Use as palavras.',f:['hand-drag',CORES.coral,'Puxão']},
+  {ic:'headset',cor:CORES.verde,p:'Devolver o fone limpinho e enrolado depois de usar.',ok:1,x:'Devolver do jeito que pegou é cuidar do que é do outro.',f:['headset',CORES.verde,'Fone devolvido']},
+  {ic:'camera',cor:CORES.coral,p:'Tirar foto do colega sem ele saber e mandar para todo mundo.',ok:0,x:'Foto dos outros só com licença. Ninguém gosta de ser exposto.',f:['camera',CORES.coral,'Foto sem licença']}]},
  {nome:'Detetive dos cuidados',ic:['search',CORES.rosa],cor:'#FFE0EE',txt:'Ao contrário: três estão certas. Encontre a que NÃO pode.',fases:[
   {t:'ache',p:'Qual destas NÃO pode?',op:[['handwashing',CORES.ceu,'Lavar as mãos antes',1],['towel',CORES.menta,'Limpar com pano seco',1],['drink',CORES.coral,'Suco do lado do computador',0],['sandwich',CORES.sol,'Lanchar na cozinha',1]],x:'O suco do lado do computador é o perigo. As outras três cuidam do aparelho.',f:['search',CORES.rosa,'Lupa']},
   {t:'ache',p:'Qual destas NÃO pode?',op:[['plug-one',CORES.verde,'Segurar pelo plugue',1],['plug',CORES.coral,'Puxar pelo fio',0],['people',CORES.verde,'Pedir ajuda ao adulto',1],['battery-charge',CORES.menta,'Enrolar o carregador',1]],x:'Puxar pelo fio quebra o fio por dentro. As outras três são jeitos certos.',f:['plug-one',CORES.verde,'Detetive dos fios']},
   {t:'ache',p:'Qual destas NÃO pode?',op:[['umbrella',CORES.uva,'Guardar da chuva',1],['sun-one',CORES.sol,'Deixar no sol forte',0],['people',CORES.verde,'Chamar adulto se esquentar',1],['laptop',CORES.ceu,'Carregar com as duas mãos',1]],x:'Sol forte esquenta o aparelho e estraga a bateria.',f:['sun-one',CORES.sol,'Detetive do sol']},
   {t:'ache',p:'Qual destas NÃO pode?',op:[['click-tap',CORES.verde,'Toque leve na tela',1],['power',CORES.verde,'Desligar direitinho',1],['mouse',CORES.ceu,'Deixar tudo no lugar',1],['hammer-and-anvil',CORES.coral,'Bater quando trava',0]],x:'Bater não conserta nada. Quando travar, espere ou chame um adulto.',f:['power',CORES.verde,'Detetive do botão']},
   {t:'ache',p:'Qual destas NÃO pode?',op:[['time',CORES.verde,'Esperar a vez',1],['school',CORES.verde,'Avisar a professora',1],['people-speak',CORES.coral,'Gritar com o colega',0],['chair',CORES.verde,'Sentar direitinho',1]],x:'Gritar não ajuda ninguém. Dá para pedir com calma.',f:['school',CORES.verde,'Detetive da escola']},
-  {t:'ache',p:'Qual destas NÃO pode?',op:[['eyes',CORES.ceu,'Pausa para os olhos',1],['alarm-clock',CORES.sol,'Hora combinada',1],['headset',CORES.coral,'Som no máximo',0],['umbrella',CORES.uva,'Guardar da chuva',1]],x:'Som no máximo machuca o ouvido. Baixinho é melhor.',f:['headset',CORES.uva,'Detetive do som']}]}
+  {t:'ache',p:'Qual destas NÃO pode?',op:[['eyes',CORES.ceu,'Pausa para os olhos',1],['alarm-clock',CORES.sol,'Hora combinada',1],['headset',CORES.coral,'Som no máximo',0],['umbrella',CORES.uva,'Guardar da chuva',1]],x:'Som no máximo machuca o ouvido. Baixinho é melhor.',f:['headset',CORES.uva,'Detetive do som']},
+  {t:'ache',p:'Qual destas NÃO pode?',op:[['backpack',CORES.terra,'Guardar na capinha',1],['battery-charge',CORES.verde,'Carregador certo',1],['book-one',CORES.coral,'Livros em cima do notebook',0],['ipad',CORES.ceu,'Longe da beirada',1]],x:'Livros pesados em cima rachariam a tela. As outras três protegem o aparelho.',f:['backpack',CORES.terra,'Detetive da mochila']},
+  {t:'ache',p:'Qual destas NÃO pode?',op:[['lock',CORES.verde,'Senha só com a família',1],['people',CORES.verde,'Chamar adulto se algo for estranho',1],['game',CORES.verde,'Jogos liberados',1],['people-unknown',CORES.coral,'Conversar com desconhecido',0]],x:'Desconhecido na internet é para mostrar ao adulto, não para conversar.',f:['lock',CORES.verde,'Detetive da senha']},
+  {t:'ache',p:'Qual destas NÃO pode?',op:[['people-speak',CORES.verde,'Perguntar "posso usar?"',1],['iphone',CORES.coral,'Pegar sem pedir',0],['time',CORES.verde,'Trocar na hora combinada',1],['headset',CORES.verde,'Devolver limpinho',1]],x:'Pegar sem pedir não é legal com ninguém. Pedir é o caminho.',f:['people-speak',CORES.verde,'Detetive do respeito']},
+  {t:'ache',p:'Qual destas NÃO pode?',op:[['towel',CORES.menta,'Pano seco na tela',1],['water',CORES.ceu,'Água na tela',0],['click-tap',CORES.verde,'Toque leve',1],['laptop',CORES.ceu,'Duas mãos para carregar',1]],x:'Água na tela entra pelas frestas. Só pano seco e macio.',f:['towel',CORES.menta,'Detetive do paninho']},
+  {t:'ache',p:'Qual destas NÃO pode?',op:[['chair',CORES.verde,'Costas retas',1],['single-bed',CORES.coral,'Celular embaixo do travesseiro',0],['eyes',CORES.ceu,'Olhar longe de vez em quando',1],['school',CORES.verde,'Avisar se quebrou',1]],x:'Embaixo do travesseiro o celular esquenta. Ele carrega na mesa.',f:['chair',CORES.verde,'Detetive do sono']}]}
 ];
 var FASES=[]; MUNDOS.forEach(function(m,mi){ m.fases.forEach(function(f,fi){ f.m=mi; f.i=fi; FASES.push(f); }); });
 var ELOGIOS=['Muito bem!','Isso mesmo!','Você é um bom guardião!','Boa!','Mandou bem!'];
@@ -157,7 +183,9 @@ function mapa(){
 /* ======================================================================
    Jogo
    ====================================================================== */
-var atual=0,L=null,trava=false,erros=0;
+var atual=0,L=null,trava=false,erros=0,seq=0,errosTema={};
+var FOGO='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 4 5 5.5 5 11a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.2 1.6 1 2.5 2 2.5 0-3-1.5-5 1-9z" fill="#F9C74F" stroke="#F26B5B" stroke-width="1.6" stroke-linejoin="round"/></svg>';
+function chipSeq(){ var c=$('chipSeq'); if(seq>=2){ c.innerHTML=FOGO+'<b>'+seq+'</b><span>seguidas</span>'; c.classList.remove('oculto'); c.classList.remove('pula'); void c.offsetWidth; c.classList.add('pula'); } else c.classList.add('oculto'); }
 function joga(i){
   atual=i; L=FASES[i]; trava=false; erros=0;
   var m=MUNDOS[L.m];
@@ -165,7 +193,7 @@ function joga(i){
   $('chipTema').innerHTML=icone(m.ic[0],m.ic[1]); $('chipTema').appendChild(txt('span',null,m.nome));
   var ps=$('passos'); ps.innerHTML='';
   m.fases.forEach(function(f,fi){ var d=el('i'); if(est.feitas[FASES.indexOf(f)]) d.className='f'; if(fi===L.i) d.className='a'; ps.appendChild(d); });
-  $('aviso').innerHTML='';
+  $('aviso').innerHTML=''; chipSeq();
   var palco=$('palco'); palco.innerHTML='';
   if(L.t==='ache'){
     palco.appendChild(el('div','pergunta','<b>'+L.p+'</b><span>Três cuidam bem do aparelho. Toque na única que estraga ou machuca.</span>'));
@@ -210,9 +238,18 @@ function escolheAche(b){
 function conclui(){
   var novo=!est.feitas[atual]; est.feitas[atual]=1; salva(); tom([523,659,784]);
   var ult=atual===FASES.length-1,m=MUNDOS[L.m],fimMundo=L.i===m.fases.length-1;
+  // sequência de acertos de primeira e tema sem nenhum erro (só nesta sessão, sem placar)
+  if(L.i===0) errosTema[L.m]=0;
+  errosTema[L.m]=(errosTema[L.m]||0)+erros;
+  seq=erros===0?seq+1:0;
+  var marco=erros===0&&(seq===3||seq===5||(seq>5&&seq%5===0));
+  var temaPerfeito=fimMundo&&errosTema[L.m]===0;
   var p=$('premio'); p.innerHTML='';
   var c=el('div','cartao'); c.style.setProperty('--cor',m.cor);
-  c.appendChild(txt('h2',null,ELOGIOS[Math.floor(Math.random()*ELOGIOS.length)])); c.lastChild.id='premioTit';
+  c.appendChild(txt('h2',null,temaPerfeito?'Uau! Tema perfeito!':marco?'Uau! '+seq+' seguidas!':ELOGIOS[Math.floor(Math.random()*ELOGIOS.length)])); c.lastChild.id='premioTit';
+  if(temaPerfeito) c.appendChild(el('div','festa grande',FOGO+FOGO+FOGO+'<span>Você terminou "'+m.nome+'" sem errar nenhuma!</span>'));
+  else if(marco) c.appendChild(el('div','festa',FOGO+'<span>'+seq+' respostas certas de primeira, uma atrás da outra!</span>'));
+  else if(seq>=2&&erros===0) c.appendChild(el('div','festa leve',FOGO+'<span>'+seq+' seguidas sem errar. Continue assim!</span>'));
   c.appendChild(el('div','explica','<span class="marca-'+(L.t==='ache'||!L.ok?'nao':'pode')+'">'+(L.t==='ache'?'Não pode':L.ok?'Pode':'Não pode')+'</span>'+L.x));
   c.appendChild(el('div','carimbo-grande','<div class="cg-in" style="--cor-selo:'+L.f[1]+'">'+icone(L.f[0],L.f[1])+'</div>'));
   c.appendChild(el('div','nome-fig',(novo?'Carimbo novo: ':'Você já tem: ')+'<b></b>')); c.lastChild.lastChild.textContent=L.f[2];
@@ -222,7 +259,7 @@ function conclui(){
   var bp=el('button','bt-principal',ult?'Ver minha carteirinha':'Continuar'); bp.onclick=ult?album:function(){ joga(atual+1); }; lb.appendChild(bp);
   var bo=el('button','bt-leve',icone('volume-up',CORES.ceu)+'Ouvir'); bo.onclick=function(){ fala(L.p+'. '+(L.t==='ache'?'':(L.ok?'Pode. ':'Não pode. '))+L.x); }; lb.appendChild(bo);
   var bm=el('button','bt-leve',icone('map-draw',CORES.menta)+'Temas'); bm.onclick=mapa; lb.appendChild(bm);
-  c.appendChild(lb); p.appendChild(c); p.classList.remove('oculto'); confete();
+  c.appendChild(lb); p.appendChild(c); p.classList.remove('oculto'); confete(); if(temaPerfeito||marco) setTimeout(confete,400);
   setTimeout(function(){ bp.focus(); },60);
 }
 function confete(){
