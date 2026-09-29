@@ -1,25 +1,3 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PODE OU NÃO PODE?</title><style>*{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;overflow:hidden}
-body{font-family:"Trebuchet MS",Verdana,sans-serif;color:#2A3081;background:#F4F5FB;display:flex;flex-direction:column;user-select:none}
-header{background:#2A3081;color:#fff;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-shrink:0}
-header h1{font-size:24px}.chip{font-size:20px;font-weight:bold;border-radius:12px;padding:8px 16px}
-#c1{background:#fff;color:#2A3081;margin-left:auto}#c2{background:#FFD900;color:#2A3081}
-#palco{flex:1;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:16px}
-#aviso{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:24px;font-weight:bold;padding:12px 26px;border-radius:14px;display:none;background:#E8590C;color:#fff}
-#festa{position:absolute;inset:0;background:rgba(255,255,255,.97);display:none;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:20px}
-#festa .tit{font-size:52px;font-weight:bold}#festa .sub{font-size:26px;color:#444;max-width:780px;line-height:1.4}
-#festa button{font:inherit;font-size:26px;font-weight:bold;padding:15px 34px;border:none;border-radius:14px;background:#2F9E44;color:#fff;cursor:pointer}#emo{font-size:120px;line-height:1}#sit{font-size:34px;font-weight:bold;text-align:center;max-width:860px}
-#bts{display:flex;gap:30px}.bt{font:inherit;font-size:32px;font-weight:bold;width:260px;height:110px;border:none;border-radius:22px;color:#fff;cursor:pointer;transition:transform .15s}
-.bt:hover{transform:scale(1.06)}#bP{background:#2F9E44}#bN{background:#E03131}</style></head><body>
-<header><h1>PODE OU NÃO PODE?</h1><div class="chip" id="c1">—</div><div class="chip" id="c2">⭐ 0</div></header>
-<div id="palco"><div id="emo">—</div><div id="sit">—</div><div id="bts"><button class="bt" id="bP">👍 PODE</button><button class="bt" id="bN">✋ NÃO PODE</button></div><div id="aviso"></div><div id="festa"></div></div>
-<script>(function(){var $=function(i){return document.getElementById(i)};
-function aviso(t){var a=$('aviso');a.textContent=t;a.style.display='block';clearTimeout(a._t);a._t=setTimeout(function(){a.style.display='none'},1500);}
-function festa(tit,sub,bt,fn){var f=$('festa');f.innerHTML='<div class="tit">'+tit+'</div><div class="sub">'+sub+'</div><button id="btF">'+bt+'</button>';f.style.display='flex';$('btF').onclick=fn;}
-var S=[["🍫", "Comer chocolate em cima do teclado.", 0, "Migalhas e melado entram nas teclas e elas param de funcionar."], ["🧼", "Lavar as mãos antes de usar o tablet.", 1, "Mão limpa deixa a tela limpa e o aparelho dura mais."], ["🔌", "Tirar da tomada puxando pelo fio.", 0, "O fio pode quebrar por dentro. Puxe sempre pela ponta, o plugue."], ["🤲", "Carregar o notebook fechado, com as duas mãos.", 1, "Assim ele não cai e a tela fica protegida."], ["🥤", "Deixar o copo de suco do lado do computador.", 0, "Um esbarrão e o suco cai dentro do aparelho."], ["☀️", "Deixar o celular no sol forte.", 0, "O aparelho esquenta demais e a bateria estraga."], ["🙋", "Chamar um adulto quando o aparelho esquentar muito.", 1, "Aparelho muito quente é sinal de problema. Um adulto sabe o que fazer."], ["🛏️", "Deixar o tablet carregando embaixo do cobertor.", 0, "Ele esquenta muito lá embaixo. É perigoso."], ["👆", "Tocar a tela com cuidado, sem apertar forte.", 1, "A tela entende um toque leve. Apertar forte pode rachar."], ["💧", "Usar o celular com a mão molhada.", 0, "Água e aparelho não combinam. Seque bem as mãos antes."], ["🔋", "Desligar o computador direitinho no final.", 1, "Desligar pelo botão certo evita perder o trabalho e estragar o sistema."], ["🔨", "Bater no computador quando ele trava.", 0, "Bater não conserta e ainda pode quebrar. Espere ou chame um adulto."]],i=0,est=0,tent=0;
-function monta(){tent=0;$('festa').style.display='none';var s=S[i];$('emo').textContent=s[0];$('sit').textContent=s[1];$('c1').textContent='Situação '+(i+1)+' de '+S.length;}
-function resp(v){var s=S[i];if(v===s[2]){var g=tent===0?2:1;est+=g;$('c2').textContent='⭐ '+est;var ult=i===S.length-1;
-  festa(s[2]?'👍 PODE, SIM!':'✋ NÃO PODE!',s[3],ult?'VER O RESULTADO':'PRÓXIMA →',function(){if(ult){festa('🏆 VOCÊ É UM GUARDIÃO DAS MÁQUINAS!','Você juntou <b>'+est+'</b> estrelas de '+(S.length*2)+'.','JOGAR DE NOVO',function(){i=0;est=0;$('c2').textContent='⭐ 0';monta();});}else{i++;monta();}});}
- else{tent++;aviso('Pense de novo: isso cuida ou estraga o aparelho?');}}
-$('bP').onclick=function(){resp(1)};$('bN').onclick=function(){resp(0)};
-window.__t={S:S,resp:resp,get i(){return i},get est(){return est}};monta();})();</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./"><link rel="canonical" href="https://pode-ou-nao-pode.cliick.dev/"><title>Pode ou não pode?</title></head>
+<body><p>O jogo mudou de endereço: <a href="./">pode-ou-nao-pode.cliick.dev</a></p></body></html>
